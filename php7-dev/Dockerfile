@@ -1,4 +1,4 @@
-FROM eloygc/php7:latest
+FROM eloygc/docker-php:latest
 
 ARG USER=root
 ARG PASSWORD=root
@@ -34,7 +34,7 @@ RUN apk add --no-cache \
 
 ADD config /
 
-COPY tooling/*          /usr/local/bin/
+COPY tooling/* /usr/local/bin/
 
 
 RUN HOST_IP="$(/sbin/ip route|awk '/default/ { print $3 }')" \
