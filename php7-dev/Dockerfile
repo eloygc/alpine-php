@@ -25,8 +25,11 @@ RUN apk add --no-cache \
     && echo "${USER}:${PASSWORD}" | chpasswd \
     && ssh-keygen -A \
 
-    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION} \
-    && composer global require "hirak/prestissimo" \
+    && cd \
+    && rm -rf /tmp/* \
+
+    && curl -sS https://getcomposer.org/installer | php7 -- --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION} \
+    && composer global require "hirak/prestissimo:0.3.6" \
 
     && wget https://git.io/psysh \
     && chmod +x psysh \
