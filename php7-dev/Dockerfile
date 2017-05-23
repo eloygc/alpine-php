@@ -1,4 +1,4 @@
-FROM escenit/php7:latest
+FROM eloygc/php7:latest
 
 ARG USER=root
 ARG PASSWORD=root
