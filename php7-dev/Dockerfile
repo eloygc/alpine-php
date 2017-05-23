@@ -1,4 +1,4 @@
-FROM eloygc/docker-php:latest
+FROM jorge07/alpine-php:7.1
 
 ARG USER=root
 ARG PASSWORD=root
