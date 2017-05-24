@@ -1,4 +1,4 @@
-FROM jorge07/alpine-php:7.1
+FROM eloygc/docker-php:latest
 
 ARG USER=root
 ARG PASSWORD=root
@@ -7,6 +7,8 @@ ARG COMPOSER_VERSION=1.3.2
 ARG XDEBUG_VERSION=2.5.1
 
 RUN apk add --no-cache \
+        php7-dev \
+        php7-dom \
         php7-xdebug \
         php7-pdo_sqlite \
         php7-pear \
