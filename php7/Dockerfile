@@ -17,6 +17,7 @@ RUN echo "@edge-main http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk
     php7-iconv \
     php7-intl \
     php7-json \
+    php7-fileinfo \
     php7-mbstring \
     php7-mcrypt \
     php7-mysqlnd \
