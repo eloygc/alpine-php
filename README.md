@@ -1,5 +1,5 @@
 ## Docker Alpine-PHP7.*
-[![Build Status](https://travis-ci.org/eloygc/alpine-php.svg?branch=master)](https://travis-ci.org/eloygc/alpine-php) 
+[![Build Status](https://travis-ci.com/eloygc/alpine-php.svg?branch=master)](https://travis-ci.com/eloygc/alpine-php) 
 [![docker hub](https://img.shields.io/docker/pulls/eloygc/alpine-php.svg)](https://hub.docker.com/r/eloygc/alpine-php/)
 [![docker hub](https://img.shields.io/docker/stars/eloygc/alpine-php.svg)](https://hub.docker.com/r/eloygc/alpine-php/)
 
