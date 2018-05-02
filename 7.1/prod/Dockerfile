@@ -1,10 +1,8 @@
-FROM alpine:edge
+FROM alpine:3.7
 
-LABEL maintainer "Eloy Gómez <sr.eloy@gmail.com>"
+LABEL maintainer="Eloy Gómez <sr.eloy@gmail.com>"
 
-RUN echo "@edge-main http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
-    && echo "@edge-community http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
-    && apk add -U \
+RUN apk add -U \
     tini \
     php7 \
     php7-apcu \
@@ -37,7 +35,6 @@ RUN echo "@edge-main http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk
     php7-xsl \
     php7-zip \
     php7-zlib \
-
     && rm -rf /var/cache/apk/*
 
 ADD config /
